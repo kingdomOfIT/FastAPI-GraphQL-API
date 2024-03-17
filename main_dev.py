@@ -1,3 +1,4 @@
+import load_env
 from src.graphql.core.config import settings
 import asyncio
 import uvicorn
