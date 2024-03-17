@@ -36,7 +36,7 @@ async def listPhoneNumbers(info):
 
 async def getPhoneNumber(id, info):
 
-    """ Get specific stickynote by id resolver """
+    """ Get specific Phone Number by id resolver """
 
     selected_fields = getOnlySelectedFields(PhoneNumber,info)
 
@@ -46,8 +46,8 @@ async def getPhoneNumber(id, info):
 
         db_phoneNumber = (await s.execute(sql)).scalars().unique().one()
     
-    sticky_note_dict = getValidData(db_phoneNumber, PhoneNumber)
-    return PhoneNumber(**sticky_note_dict)
+    phone_number_dict = getValidData(db_phoneNumber, PhoneNumber)
+    return PhoneNumber(**phone_number_dict)
 
 async def createPhoneNumber(name, userID, phoneNumber):
 

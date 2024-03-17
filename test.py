@@ -8,4 +8,4 @@ from tests.graphql.db import engine
 
 if __name__ == "__main__":
     asyncio.run(create_tables(engine))
-    pytest.main(args=[ "--cov=tests","tests/graphql/test_user_stickynotes.py","-s","--disable-warnings"])
+    pytest.main(args=[ "--cov=tests","tests/graphql/test_user_phone_number.py","-s","--disable-warnings"])
